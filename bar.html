@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar</title>
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        background:linear-gradient(120deg, #0cf9e5, #5a84eb);
+    }
+    .navbar
+    {   height: 70px;
+        margin: auto 100px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        font-size: 25px;
+        font-family:sans-serif;
+    }
+    .logo{
+       
+        font-size: 40px;
+        color: #5a84eb;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
+    }
+    .navitems ul{
+        display:inline-flex;
+        
+    }
+    .navitems li{
+        margin-right: 40px;
+        list-style: none;
+    }
+    .navitems li a{
+        text-decoration: none;
+    }
+    .navitems li a:hover{
+        color: #0cf9e5;
+    }
+    .hero{
+        display: flex;
+        align-items:center;
+        height: 90vh;
+        background-image: url(./star.jpg);
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .mainImg{
+        position: absolute;
+        top: 0px;
+        left: 40%;
+        height:300px;
+        width:330px;
+        padding:6px;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        color:#fff;
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        cursor:pointer;
+        position:relative;
+        overflow:hidden;
+    }
+    .mainImg image{
+               
+        width:150px;
+        height:150px;
+        top:0;
+        left:0;
+        transition:1s;
+    }
+    .image img{
+        width:90%;
+        height:90%;
+        transition:all 3s;
+        border-radius:50%;
+        transition:all 0.5s;
+        object-fit:fill;
+    }
+    .mainImg .image img:hover{
+        border-radius: 2%;
+    }
+
+
+
+    
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">N.</div>
+            <div class="navitems">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="mainImg">
+            <div class="image">
+                <img src="./mainimg.png">
+            </div>
+            <div class="user-content">
+                <h3>Mohit Rai</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
